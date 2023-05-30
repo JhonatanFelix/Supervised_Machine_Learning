@@ -10,7 +10,8 @@ The Linear Regression is the line that minimizes the cost function. By that, we 
 As a method of prediction we need some metrics to evaluate if our model is good or not. For tha we calculate the **residuals**, as follows $$R_{(i)} = y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)}  $$ In this formula we have that that $y_\beta(x_{obs}^{(i)})$ is our predicted value, and $y_{obs}^{i}$ is our observed value. We can see in the figure bellow what exactly are the residuals.
 ![Figure 2]()
 
-Now we can utilize some metrics to evaluate, using residuals as follows. For instance, we can $$ MAE = \frac{1}{n} \sum\limits_{i=1}^{n} \lvert y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)}\rvert$$ $$ MSE = \frac{1}{n} \sum\limits_{i=1}^{n}(y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} )^2 $$
+Now we can utilize some metrics to evaluate, using residuals as follows. For instance, we can
+$$ MAE = \frac{1}{n} \sum\limits_{i=1}^{n} \lvert y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)}\rvert$$ $$ MSE = \frac{1}{n} \sum\limits_{i=1}^{n}(y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} )^2 $$
 
 
 ### MAE
@@ -26,3 +27,7 @@ The mean square error (MSE) is just like the MAE, but squares the difference bef
 When we square the difference between the data and the model's predictions, the result is the Mean Squared Error (MSE), which tends to be larger than the Mean Absolute Error (MAE). Due to this squaring operation, direct comparison between the MSE and MAE is not meaningful. Instead, we compare the error metrics of our model with those of competing models.
 
 The impact of the squared term in the MSE equation becomes more pronounced when dealing with outliers in the data. While each residual in the MAE contributes proportionally to the total error, the error in the MSE grows quadratically. Consequently, outliers have a much greater influence on the total error in the MSE compared to the MAE. Moreover, the model is more heavily penalized for making predictions that significantly deviate from the corresponding actual values. In other words, large differences between actual and predicted values are punished more severely in the MSE than in the MAE.
+
+$$ MAE = \frac{1}{n} \sum\limits_{i=1}^{n} \lvert y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)}\rvert$$
+
+$$ MAE = \frac{1}{n} \sum\limits_{i=1}^{n} \lvert y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)}\rvert$$
