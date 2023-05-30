@@ -11,4 +11,4 @@ As a method of prediction we need some metrics to evaluate if our model is good 
 Now we can utilize some metrics to evaluate, using residuals as follows. For instance, we can 
 $$ MAE = \frac{1}{n} \sum\limits_{i=1}^{n}|y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} | 
 \\
- MSE = \frac{1}{n} \sum\limits_{i=1}^{n}(y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} )^2 $$
+MSE = \frac{1}{n} \sum\limits_{i=1}^{n}(y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} )^2 $$
