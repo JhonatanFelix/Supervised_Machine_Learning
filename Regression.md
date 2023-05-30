@@ -2,6 +2,7 @@
 
 The equation of a first order linear Regression is simply $$y_\beta = \beta_0 + \beta_1x$$
 
+![](https://github.com/JhonatanFelix/Supervised_Machine_Learning/blob/main/images/LinearRegressionExample.png)
 
 As a method of prediction we need some metrics to evaluate if our model is good or not. For tha we calculate the **residuals**, as follows $$R_{(i)} = y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)}  $$ In this formula we have that that $y_\beta(x_{obs}^{(i)})$ is our predicted value, and $y_{obs}^{i}$ is our observed value.
 
