@@ -36,4 +36,5 @@ $$ MAE = \frac{1}{n} \sum\limits_{i=1}^{n} \lvert y_\beta (x_{obs}^{(i)}) - y_{o
 
 $$ MAE = \frac{1}{n} \sum\limits_{i=1}^{n} \lvert y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)}\rvert$$ $$ MSE = \frac{1}{n} \sum\limits_{i=1}^{n}(y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} )^2 $$
 
-$$ MAE = \frac{1}{n} \sum\limits_{i=1}^{n} \lvert y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)}\rvert$$ $$ MSE = \frac{1}{n} \sum\limits_{i=1}^{n}(y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} )^2 $$ 
+
+ $$ MSE = \frac{1}{n} \sum\limits_{i=1}^{n}(y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} )^2 $$ 
