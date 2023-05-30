@@ -12,7 +12,6 @@ As a method of prediction we need some metrics to evaluate if our model is good 
 
 Now we can utilize some metrics to evaluate, using residuals as follows. For instance, we can $$ MAE = \frac{1}{n} \sum\limits_{i=1}^{n}|y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} | $$
 
-$$ MSE = \frac{1}{n} \sum\limits_{i=1}^{n}(y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} )^2 $$
 
 ### MAE
 The mean absolute error (MAE) is the simplest regression error metric to understand. We’ll calculate the residual for every data point, taking only the absolute value of each so that negative and positive residuals do not cancel out. We then take the average of all these residuals. Effectively, MAE describes the typical magnitude of the residuals. Mathematically we can see as the mean of the $\mathbb{L}^1$ norm.
@@ -22,7 +21,7 @@ The Mean Absolute Error (MAE) is a metric that provides an intuitive measure of 
 Although the MAE is easy to interpret, using the absolute value of the residuals may not always be the preferred approach. Depending on how you want your model to handle outliers or extreme values in the data, you may want to give more emphasis to these outliers or downplay their impact. The presence of outliers can significantly affect the choice of an appropriate error metric.
 
 ### MSE
-The mean square error (MSE) is just like the MAE, but squares the difference before summing them all instead of using the absolute value. We can see this difference in the equation below.
+The mean square error (MSE) is just like the MAE, but squares the difference before summing them all instead of using the absolute value. We can see this difference in the equation below. Mathematically we can see as the mean of the $\mathbb{L}^2$ norm.
 
 When we square the difference between the data and the model's predictions, the result is the Mean Squared Error (MSE), which tends to be larger than the Mean Absolute Error (MAE). Due to this squaring operation, direct comparison between the MSE and MAE is not meaningful. Instead, we compare the error metrics of our model with those of competing models.
 
