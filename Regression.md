@@ -18,6 +18,11 @@ Now we can utilize some metrics to evaluate, using residuals as follows. For ins
 
 $$ MAE = \frac{1}{n} \sum\limits_{i=1}^{n} \lvert y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)}\rvert$$ 
 
+or utilizes the metric of **Mean Squared Error(MSE)**
+
+$$ MSE = \frac{1}{n} \sum\limits_{i=1}^{n}(y_\beta (x_{obs}^{(i)}) - y_{obs}^{(i)} )^2 $$
+
+
 
 ### MAE
 The mean absolute error (MAE) is the simplest regression error metric to understand. We’ll calculate the residual for every data point, taking only the absolute value of each so that negative and positive residuals do not cancel out. We then take the average of all these residuals. Effectively, MAE describes the typical magnitude of the residuals. Mathematically we can see as the mean of the $\mathbb{L}^1$ norm.
